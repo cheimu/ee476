@@ -1,0 +1,612 @@
+** Generated for: hspiceD
+** Generated on: Dec  4 03:08:31 2017
+** Design library name: cad6_compact
+** Design cell name: ALU
+** Design view name: schematic
+.GLOBAL vss! vdd!
+
+
+.TEMP 25.0
+.OPTION
++    ARTIST=2
++    INGOLD=2
++    PARHIER=LOCAL
++    PSF=2
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_bip
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_dio
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_dio_33
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_mim
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_dio_dnw
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_dio_18
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_bip_npn
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_33
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_rfrtmom
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_mos_cap_25
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_18
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_disres
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_res
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_dio_na
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_rfmos_33
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_dio_hvt
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_rfmvar
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_rfmos_18
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_na
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_dio_na33
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_dio_lvt
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_rfres_sa
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_na33
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_dio_esd
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_rfmim
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_dio_25od33
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_25od33
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_mos_cap
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_dio_25
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_dio_25ud18
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_25
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_rfmos
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_25ud18
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_dio_na25od33
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_rfjvar
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_rfmos_25
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_rtmom
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_na25od33
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_dio_na25
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_rfres_rpo
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_hvt
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_rfind
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_rfmvar_25
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_na25
+.LIB "/home/lab.apps/vlsiapps/kits/tsmc/N65RF/1.0c/models/hspice/crn65gplus_2d5_lk_v1d0.l" tt_lvt
+
+** Library name: std_cells
+** Cell name: XOR2D2
+** View name: schematic
+.subckt XOR2D2 a1 a2 z vdd vss
+m0 net5 net13 net20 vss nch l=60e-9 w=320e-9 m=1 nf=1 sd=200e-9 ad=56e-15 as=56e-15 pd=990e-9 ps=990e-9 nrd=312.5e-3 nrs=312.5e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m1 z net20 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m2 net33 a1 net20 vss nch l=60e-9 w=310e-9 m=1 nf=1 sd=200e-9 ad=54.25e-15 as=54.25e-15 pd=970e-9 ps=970e-9 nrd=322.581e-3 nrs=322.581e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m3 net13 a1 vss vss nch l=60e-9 w=195e-9 m=1 nf=1 sd=200e-9 ad=34.125e-15 as=34.125e-15 pd=740e-9 ps=740e-9 nrd=512.821e-3 nrs=512.821e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m4 z net20 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m5 net5 a2 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m6 net33 net5 vss vss nch l=60e-9 w=190e-9 m=1 nf=1 sd=200e-9 ad=33.25e-15 as=33.25e-15 pd=730e-9 ps=730e-9 nrd=526.316e-3 nrs=526.316e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m7 z net20 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m8 net5 a1 net20 vdd pch l=60e-9 w=340e-9 m=1 nf=1 sd=200e-9 ad=59.5e-15 as=59.5e-15 pd=1.03e-6 ps=1.03e-6 nrd=294.118e-3 nrs=294.118e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m9 z net20 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m10 net33 net5 vdd vdd pch l=60e-9 w=260e-9 m=1 nf=1 sd=200e-9 ad=45.5e-15 as=45.5e-15 pd=870e-9 ps=870e-9 nrd=384.615e-3 nrs=384.615e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m11 net13 a1 vdd vdd pch l=60e-9 w=260e-9 m=1 nf=1 sd=200e-9 ad=45.5e-15 as=45.5e-15 pd=870e-9 ps=870e-9 nrd=384.615e-3 nrs=384.615e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m12 net33 net13 net20 vdd pch l=60e-9 w=310e-9 m=1 nf=1 sd=200e-9 ad=54.25e-15 as=54.25e-15 pd=970e-9 ps=970e-9 nrd=322.581e-3 nrs=322.581e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m13 net5 a2 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+.ends XOR2D2
+** End of subcircuit definition.
+
+** Library name: std_cells
+** Cell name: XOR2D4
+** View name: schematic
+.subckt XOR2D4 a1 a2 z vdd vss
+m0 net5 net95 net96 vss nch l=60e-9 w=300e-9 m=1 nf=1 sd=200e-9 ad=52.5e-15 as=52.5e-15 pd=950e-9 ps=950e-9 nrd=333.333e-3 nrs=333.333e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m1 net95 a1 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m2 net5 a2 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m3 z net96 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m4 net5 net95 net96 vss nch l=60e-9 w=300e-9 m=1 nf=1 sd=200e-9 ad=52.5e-15 as=52.5e-15 pd=950e-9 ps=950e-9 nrd=333.333e-3 nrs=333.333e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m5 z net96 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m6 net81 net5 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m7 net81 a1 net96 vss nch l=60e-9 w=310e-9 m=1 nf=1 sd=200e-9 ad=54.25e-15 as=54.25e-15 pd=970e-9 ps=970e-9 nrd=322.581e-3 nrs=322.581e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m8 net5 a2 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m9 z net96 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m10 z net96 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m11 net5 a2 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m12 net81 a1 net96 vss nch l=60e-9 w=310e-9 m=1 nf=1 sd=200e-9 ad=54.25e-15 as=54.25e-15 pd=970e-9 ps=970e-9 nrd=322.581e-3 nrs=322.581e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m13 z net96 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m14 net5 a2 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m15 net81 net95 net96 vdd pch l=60e-9 w=450e-9 m=1 nf=1 sd=200e-9 ad=78.75e-15 as=78.75e-15 pd=1.25e-6 ps=1.25e-6 nrd=222.222e-3 nrs=222.222e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m16 net5 a2 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m17 net5 a2 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m18 net81 net5 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m19 z net96 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m20 net81 net95 net96 vdd pch l=60e-9 w=450e-9 m=1 nf=1 sd=200e-9 ad=78.75e-15 as=78.75e-15 pd=1.25e-6 ps=1.25e-6 nrd=222.222e-3 nrs=222.222e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m21 net95 a1 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m22 z net96 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m23 net5 a1 net96 vdd pch l=60e-9 w=450e-9 m=1 nf=1 sd=200e-9 ad=78.75e-15 as=78.75e-15 pd=1.25e-6 ps=1.25e-6 nrd=222.222e-3 nrs=222.222e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m24 net5 a1 net96 vdd pch l=60e-9 w=450e-9 m=1 nf=1 sd=200e-9 ad=78.75e-15 as=78.75e-15 pd=1.25e-6 ps=1.25e-6 nrd=222.222e-3 nrs=222.222e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m25 z net96 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+.ends XOR2D4
+** End of subcircuit definition.
+
+** Library name: cad6_compact
+** Cell name: Adders
+** View name: schematic
+.subckt Adders a0 a1 a10 a11 a12 a13 a14 a15 a2 a3 a4 a5 a6 a7 a8 a9 b0 b1 b10 b11 b12 b13 b14 b15 b2 b3 b4 b5 b6 b7 b8 b9 c0 c1 c10 c11 c12 c13 c14 c2 c3 c4 c5 c6 c7 c8 c9 cin s0 s1 s10 s11 s12 s13 s14 s15 s2 s3 s4 s5 s6 s7 s8 s9 xor0 xor1 xor10 xor11 xor12 xor13 xor14 xor15 xor2 xor3 xor4 xor5 xor6 xor7 xor8 xor9
+xi25 a9 b9 xor9 vdd! vss! XOR2D2
+xi24 a10 b10 xor10 vdd! vss! XOR2D2
+xi23 a11 b11 xor11 vdd! vss! XOR2D2
+xi22 a12 b12 xor12 vdd! vss! XOR2D2
+xi21 a13 b13 xor13 vdd! vss! XOR2D2
+xi20 a14 b14 xor14 vdd! vss! XOR2D2
+xi19 a15 b15 xor15 vdd! vss! XOR2D2
+xi26 a8 b8 xor8 vdd! vss! XOR2D2
+xi27 a7 b7 xor7 vdd! vss! XOR2D2
+xi28 a6 b6 xor6 vdd! vss! XOR2D2
+xi29 a5 b5 xor5 vdd! vss! XOR2D2
+xi30 a4 b4 xor4 vdd! vss! XOR2D2
+xi31 a3 b3 xor3 vdd! vss! XOR2D2
+xi32 a2 b2 xor2 vdd! vss! XOR2D2
+xi33 a1 b1 xor1 vdd! vss! XOR2D2
+xi34 a0 b0 xor0 vdd! vss! XOR2D2
+xi50 cin xor0 s0 vdd! vss! XOR2D4
+xi49 c0 xor1 s1 vdd! vss! XOR2D4
+xi48 c1 xor2 s2 vdd! vss! XOR2D4
+xi47 c2 xor3 s3 vdd! vss! XOR2D4
+xi46 c3 xor4 s4 vdd! vss! XOR2D4
+xi45 c4 xor5 s5 vdd! vss! XOR2D4
+xi44 c5 xor6 s6 vdd! vss! XOR2D4
+xi43 c6 xor7 s7 vdd! vss! XOR2D4
+xi42 c7 xor8 s8 vdd! vss! XOR2D4
+xi41 c8 xor9 s9 vdd! vss! XOR2D4
+xi40 c9 xor10 s10 vdd! vss! XOR2D4
+xi39 c10 xor11 s11 vdd! vss! XOR2D4
+xi38 c11 xor12 s12 vdd! vss! XOR2D4
+xi37 c12 xor13 s13 vdd! vss! XOR2D4
+xi36 c13 xor14 s14 vdd! vss! XOR2D4
+xi35 c14 xor15 s15 vdd! vss! XOR2D4
+.ends Adders
+** End of subcircuit definition.
+
+** Library name: std_cells
+** Cell name: MUX4D1
+** View name: schematic
+.subckt MUX4D1 i0 i1 i2 i3 s0 s1 z vdd vss
+m0 net97 s1 net11 vss nch l=60e-9 w=320e-9 m=1 nf=1 sd=200e-9 ad=56e-15 as=56e-15 pd=990e-9 ps=990e-9 nrd=312.5e-3 nrs=312.5e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m1 net59 s0 vss vss nch l=60e-9 w=180e-9 m=1 nf=1 sd=200e-9 ad=31.5e-15 as=31.5e-15 pd=710e-9 ps=710e-9 nrd=555.556e-3 nrs=555.556e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m2 net13 net59 net97 vss nch l=60e-9 w=190e-9 m=1 nf=1 sd=200e-9 ad=33.25e-15 as=33.25e-15 pd=730e-9 ps=730e-9 nrd=526.316e-3 nrs=526.316e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m3 net81 s0 net25 vss nch l=60e-9 w=280e-9 m=1 nf=1 sd=200e-9 ad=49e-15 as=49e-15 pd=910e-9 ps=910e-9 nrd=357.143e-3 nrs=357.143e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m4 net81 i1 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m5 net29 s0 net97 vss nch l=60e-9 w=225e-9 m=1 nf=1 sd=200e-9 ad=39.375e-15 as=39.375e-15 pd=800e-9 ps=800e-9 nrd=444.444e-3 nrs=444.444e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m6 net25 net17 net11 vss nch l=60e-9 w=180e-9 m=1 nf=1 sd=200e-9 ad=31.5e-15 as=31.5e-15 pd=710e-9 ps=710e-9 nrd=555.556e-3 nrs=555.556e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m7 net29 i3 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m8 net17 s1 vss vss nch l=60e-9 w=195e-9 m=1 nf=1 sd=200e-9 ad=34.125e-15 as=34.125e-15 pd=740e-9 ps=740e-9 nrd=512.821e-3 nrs=512.821e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m9 net13 i2 vss vss nch l=60e-9 w=190e-9 m=1 nf=1 sd=200e-9 ad=33.25e-15 as=33.25e-15 pd=730e-9 ps=730e-9 nrd=526.316e-3 nrs=526.316e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m10 z net11 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m11 net5 i0 vss vss nch l=60e-9 w=180e-9 m=1 nf=1 sd=200e-9 ad=31.5e-15 as=31.5e-15 pd=710e-9 ps=710e-9 nrd=555.556e-3 nrs=555.556e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m12 net5 net59 net25 vss nch l=60e-9 w=180e-9 m=1 nf=1 sd=200e-9 ad=31.5e-15 as=31.5e-15 pd=710e-9 ps=710e-9 nrd=555.556e-3 nrs=555.556e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m13 z net11 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m14 net97 net17 net11 vdd pch l=60e-9 w=310e-9 m=1 nf=1 sd=200e-9 ad=54.25e-15 as=54.25e-15 pd=970e-9 ps=970e-9 nrd=322.581e-3 nrs=322.581e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m15 net5 i0 vdd vdd pch l=60e-9 w=340e-9 m=1 nf=1 sd=200e-9 ad=59.5e-15 as=59.5e-15 pd=1.03e-6 ps=1.03e-6 nrd=294.118e-3 nrs=294.118e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m16 net29 i3 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m17 net13 s0 net97 vdd pch l=60e-9 w=405e-9 m=1 nf=1 sd=200e-9 ad=70.875e-15 as=70.875e-15 pd=1.16e-6 ps=1.16e-6 nrd=246.914e-3 nrs=246.914e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m18 net81 i1 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m19 net17 s1 vdd vdd pch l=60e-9 w=260e-9 m=1 nf=1 sd=200e-9 ad=45.5e-15 as=45.5e-15 pd=870e-9 ps=870e-9 nrd=384.615e-3 nrs=384.615e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m20 net13 i2 vdd vdd pch l=60e-9 w=340e-9 m=1 nf=1 sd=200e-9 ad=59.5e-15 as=59.5e-15 pd=1.03e-6 ps=1.03e-6 nrd=294.118e-3 nrs=294.118e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m21 net59 s0 vdd vdd pch l=60e-9 w=260e-9 m=1 nf=1 sd=200e-9 ad=45.5e-15 as=45.5e-15 pd=870e-9 ps=870e-9 nrd=384.615e-3 nrs=384.615e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m22 net25 s1 net11 vdd pch l=60e-9 w=310e-9 m=1 nf=1 sd=200e-9 ad=54.25e-15 as=54.25e-15 pd=970e-9 ps=970e-9 nrd=322.581e-3 nrs=322.581e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m23 net5 s0 net25 vdd pch l=60e-9 w=350e-9 m=1 nf=1 sd=200e-9 ad=61.25e-15 as=61.25e-15 pd=1.05e-6 ps=1.05e-6 nrd=285.714e-3 nrs=285.714e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m24 net29 net59 net97 vdd pch l=60e-9 w=450e-9 m=1 nf=1 sd=200e-9 ad=78.75e-15 as=78.75e-15 pd=1.25e-6 ps=1.25e-6 nrd=222.222e-3 nrs=222.222e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m25 net81 net59 net25 vdd pch l=60e-9 w=350e-9 m=1 nf=1 sd=200e-9 ad=61.25e-15 as=61.25e-15 pd=1.05e-6 ps=1.05e-6 nrd=285.714e-3 nrs=285.714e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+.ends MUX4D1
+** End of subcircuit definition.
+
+** Library name: std_cells
+** Cell name: MUX2D4
+** View name: schematic
+.subckt MUX2D4 i0 i1 s z vdd vss
+m0 z net11 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m1 net25 i1 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m2 net33 s vdd vdd pch l=60e-9 w=260e-9 m=1 nf=1 sd=200e-9 ad=45.5e-15 as=45.5e-15 pd=870e-9 ps=870e-9 nrd=384.615e-3 nrs=384.615e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m3 z net11 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m4 net25 net33 net11 vdd pch l=60e-9 w=340e-9 m=1 nf=1 sd=200e-9 ad=59.5e-15 as=59.5e-15 pd=1.03e-6 ps=1.03e-6 nrd=294.118e-3 nrs=294.118e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m5 z net11 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m6 net25 i1 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m7 net5 i0 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m8 z net11 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m9 net5 i0 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m10 net5 s net11 vdd pch l=60e-9 w=410e-9 m=1 nf=1 sd=200e-9 ad=71.75e-15 as=71.75e-15 pd=1.17e-6 ps=1.17e-6 nrd=243.902e-3 nrs=243.902e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m11 net5 net33 net11 vss nch l=60e-9 w=260e-9 m=1 nf=1 sd=200e-9 ad=45.5e-15 as=45.5e-15 pd=870e-9 ps=870e-9 nrd=384.615e-3 nrs=384.615e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m12 z net11 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m13 net33 s vss vss nch l=60e-9 w=195e-9 m=1 nf=1 sd=200e-9 ad=34.125e-15 as=34.125e-15 pd=740e-9 ps=740e-9 nrd=512.821e-3 nrs=512.821e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m14 net25 i1 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m15 net5 i0 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m16 net25 s net11 vss nch l=60e-9 w=230e-9 m=1 nf=1 sd=200e-9 ad=40.25e-15 as=40.25e-15 pd=810e-9 ps=810e-9 nrd=434.783e-3 nrs=434.783e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m17 z net11 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m18 net5 i0 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m19 z net11 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m20 net25 i1 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m21 z net11 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+.ends MUX2D4
+** End of subcircuit definition.
+
+** Library name: cad6_compact
+** Cell name: 5_1_mux
+** View name: schematic
+.subckt cad6_compact_5_1_mux_schematic i0 i1 i2 i3 i4 sel0 sel1 sel2 z
+xi0 i0 i1 i2 i3 sel0 sel1 net21 vdd! vss! MUX4D1
+xi1 net21 i4 sel2 z vdd! vss! MUX2D4
+.ends cad6_compact_5_1_mux_schematic
+** End of subcircuit definition.
+
+** Library name: std_cells
+** Cell name: AN2D1
+** View name: schematic
+.subckt AN2D1 a1 a2 z vdd vss
+m0 z net5 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m1 net5 a1 vdd vdd pch l=60e-9 w=260e-9 m=1 nf=1 sd=200e-9 ad=45.5e-15 as=45.5e-15 pd=870e-9 ps=870e-9 nrd=384.615e-3 nrs=384.615e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m2 net5 a2 vdd vdd pch l=60e-9 w=260e-9 m=1 nf=1 sd=200e-9 ad=45.5e-15 as=45.5e-15 pd=870e-9 ps=870e-9 nrd=384.615e-3 nrs=384.615e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m3 z net5 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m4 net17 a2 vss vss nch l=60e-9 w=195e-9 m=1 nf=1 sd=200e-9 ad=34.125e-15 as=34.125e-15 pd=740e-9 ps=740e-9 nrd=512.821e-3 nrs=512.821e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m5 net5 a1 net17 vss nch l=60e-9 w=195e-9 m=1 nf=1 sd=200e-9 ad=34.125e-15 as=34.125e-15 pd=740e-9 ps=740e-9 nrd=512.821e-3 nrs=512.821e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+.ends AN2D1
+** End of subcircuit definition.
+
+** Library name: std_cells
+** Cell name: BUFFD4
+** View name: schematic
+.subckt BUFFD4 i z vdd vss
+m0 z net11 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m1 net11 i vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m2 net11 i vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m3 z net11 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m4 z net11 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m5 z net11 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m6 z net11 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m7 z net11 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m8 z net11 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m9 net11 i vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m10 z net11 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m11 net11 i vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+.ends BUFFD4
+** End of subcircuit definition.
+
+** Library name: std_cells
+** Cell name: XOR2D0
+** View name: schematic
+.subckt XOR2D0 a1 a2 z vdd vss
+m0 net33 net9 net20 vss nch l=60e-9 w=195e-9 m=1 nf=1 sd=200e-9 ad=34.125e-15 as=34.125e-15 pd=740e-9 ps=740e-9 nrd=512.821e-3 nrs=512.821e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m1 net5 a1 net20 vss nch l=60e-9 w=195e-9 m=1 nf=1 sd=200e-9 ad=34.125e-15 as=34.125e-15 pd=740e-9 ps=740e-9 nrd=512.821e-3 nrs=512.821e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m2 z net20 vss vss nch l=60e-9 w=195e-9 m=1 nf=1 sd=200e-9 ad=34.125e-15 as=34.125e-15 pd=740e-9 ps=740e-9 nrd=512.821e-3 nrs=512.821e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m3 net9 a1 vss vss nch l=60e-9 w=195e-9 m=1 nf=1 sd=200e-9 ad=34.125e-15 as=34.125e-15 pd=740e-9 ps=740e-9 nrd=512.821e-3 nrs=512.821e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m4 net5 net33 vss vss nch l=60e-9 w=190e-9 m=1 nf=1 sd=200e-9 ad=33.25e-15 as=33.25e-15 pd=730e-9 ps=730e-9 nrd=526.316e-3 nrs=526.316e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m5 net33 a2 vss vss nch l=60e-9 w=195e-9 m=1 nf=1 sd=200e-9 ad=34.125e-15 as=34.125e-15 pd=740e-9 ps=740e-9 nrd=512.821e-3 nrs=512.821e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m6 net5 net9 net20 vdd pch l=60e-9 w=260e-9 m=1 nf=1 sd=200e-9 ad=45.5e-15 as=45.5e-15 pd=870e-9 ps=870e-9 nrd=384.615e-3 nrs=384.615e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m7 net9 a1 vdd vdd pch l=60e-9 w=260e-9 m=1 nf=1 sd=200e-9 ad=45.5e-15 as=45.5e-15 pd=870e-9 ps=870e-9 nrd=384.615e-3 nrs=384.615e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m8 net33 a1 net20 vdd pch l=60e-9 w=260e-9 m=1 nf=1 sd=200e-9 ad=45.5e-15 as=45.5e-15 pd=870e-9 ps=870e-9 nrd=384.615e-3 nrs=384.615e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m9 net33 a2 vdd vdd pch l=60e-9 w=260e-9 m=1 nf=1 sd=200e-9 ad=45.5e-15 as=45.5e-15 pd=870e-9 ps=870e-9 nrd=384.615e-3 nrs=384.615e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m10 z net20 vdd vdd pch l=60e-9 w=260e-9 m=1 nf=1 sd=200e-9 ad=45.5e-15 as=45.5e-15 pd=870e-9 ps=870e-9 nrd=384.615e-3 nrs=384.615e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m11 net5 net33 vdd vdd pch l=60e-9 w=210e-9 m=1 nf=1 sd=200e-9 ad=36.75e-15 as=36.75e-15 pd=770e-9 ps=770e-9 nrd=476.191e-3 nrs=476.191e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+.ends XOR2D0
+** End of subcircuit definition.
+
+** Library name: std_cells
+** Cell name: BUFFD2
+** View name: schematic
+.subckt BUFFD2 i z vdd vss
+m0 z net11 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m1 z net11 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m2 net11 i vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m3 z net11 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m4 net11 i vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m5 z net11 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+.ends BUFFD2
+** End of subcircuit definition.
+
+** Library name: cad6_compact
+** Cell name: buffer
+** View name: schematic
+.subckt buffer g g_out p p_out
+xi0 p p_out vdd! vss! BUFFD2
+xbuffer g g_out vdd! vss! BUFFD2
+.ends buffer
+** End of subcircuit definition.
+
+** Library name: std_cells
+** Cell name: AO21D1
+** View name: schematic
+.subckt AO21D1 a1 a2 b z vdd vss
+m_u7 net5 a1 net1 vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m0 z net5 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+mi6 net5 b vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+mi7 net1 a2 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m_u3 net25 a1 net5 vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m_u2 net25 b vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m_u4 net25 a2 net5 vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m1 z net5 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+.ends AO21D1
+** End of subcircuit definition.
+
+** Library name: cad6_compact
+** Cell name: grayCell2x
+** View name: schematic
+.subckt grayCell2x gi gik gk pi
+xaoi gk pi gi gik vdd! vss! AO21D1
+.ends grayCell2x
+** End of subcircuit definition.
+
+** Library name: std_cells
+** Cell name: OR2D1
+** View name: schematic
+.subckt OR2D1 a1 a2 z vdd vss
+m0 z net5 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m1 net5 a1 vss vss nch l=60e-9 w=195e-9 m=1 nf=1 sd=200e-9 ad=34.125e-15 as=34.125e-15 pd=740e-9 ps=740e-9 nrd=512.821e-3 nrs=512.821e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m2 net5 a2 vss vss nch l=60e-9 w=195e-9 m=1 nf=1 sd=200e-9 ad=34.125e-15 as=34.125e-15 pd=740e-9 ps=740e-9 nrd=512.821e-3 nrs=512.821e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m3 z net5 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m4 net17 a2 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m5 net5 a1 net17 vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+.ends OR2D1
+** End of subcircuit definition.
+
+** Library name: cad6_compact
+** Cell name: GP_blk
+** View name: schematic
+.subckt GP_blk a b g p
+xi0 b a g vdd! vss! AN2D1
+xi4 a b p vdd! vss! OR2D1
+.ends GP_blk
+** End of subcircuit definition.
+
+** Library name: cad6_compact
+** Cell name: buffer_single
+** View name: schematic
+.subckt buffer_single g g_out
+xbuffer g g_out vdd! vss! BUFFD2
+.ends buffer_single
+** End of subcircuit definition.
+
+** Library name: std_cells
+** Cell name: INVD0
+** View name: schematic
+.subckt INVD0 i zn vdd vss
+m0 zn i vss vss nch l=60e-9 w=195e-9 m=1 nf=1 sd=200e-9 ad=34.125e-15 as=34.125e-15 pd=740e-9 ps=740e-9 nrd=512.821e-3 nrs=512.821e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m1 zn i vdd vdd pch l=60e-9 w=260e-9 m=1 nf=1 sd=200e-9 ad=45.5e-15 as=45.5e-15 pd=870e-9 ps=870e-9 nrd=384.615e-3 nrs=384.615e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+.ends INVD0
+** End of subcircuit definition.
+
+** Library name: std_cells
+** Cell name: MUX2D1
+** View name: schematic
+.subckt MUX2D1 i0 i1 s z vdd vss
+m0 net5 i1 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m1 net37 i0 vdd vdd pch l=60e-9 w=310e-9 m=1 nf=1 sd=200e-9 ad=54.25e-15 as=54.25e-15 pd=970e-9 ps=970e-9 nrd=322.581e-3 nrs=322.581e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m2 z net27 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m3 net9 s vdd vdd pch l=60e-9 w=260e-9 m=1 nf=1 sd=200e-9 ad=45.5e-15 as=45.5e-15 pd=870e-9 ps=870e-9 nrd=384.615e-3 nrs=384.615e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m4 net5 net9 net27 vdd pch l=60e-9 w=340e-9 m=1 nf=1 sd=200e-9 ad=59.5e-15 as=59.5e-15 pd=1.03e-6 ps=1.03e-6 nrd=294.118e-3 nrs=294.118e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m5 net37 s net27 vdd pch l=60e-9 w=410e-9 m=1 nf=1 sd=200e-9 ad=71.75e-15 as=71.75e-15 pd=1.17e-6 ps=1.17e-6 nrd=243.902e-3 nrs=243.902e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m6 net37 net9 net27 vss nch l=60e-9 w=260e-9 m=1 nf=1 sd=200e-9 ad=45.5e-15 as=45.5e-15 pd=870e-9 ps=870e-9 nrd=384.615e-3 nrs=384.615e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m7 net9 s vss vss nch l=60e-9 w=195e-9 m=1 nf=1 sd=200e-9 ad=34.125e-15 as=34.125e-15 pd=740e-9 ps=740e-9 nrd=512.821e-3 nrs=512.821e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m8 net37 i0 vss vss nch l=60e-9 w=230e-9 m=1 nf=1 sd=200e-9 ad=40.25e-15 as=40.25e-15 pd=810e-9 ps=810e-9 nrd=434.783e-3 nrs=434.783e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m9 net5 s net27 vss nch l=60e-9 w=240e-9 m=1 nf=1 sd=200e-9 ad=42e-15 as=42e-15 pd=830e-9 ps=830e-9 nrd=416.667e-3 nrs=416.667e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m10 net5 i1 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m11 z net27 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+.ends MUX2D1
+** End of subcircuit definition.
+
+** Library name: std_cells
+** Cell name: AN2D4
+** View name: schematic
+.subckt AN2D4 a1 a2 z vdd vss
+m0 z net5 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m1 z net5 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m2 z net5 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m3 z net5 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m4 net5 a1 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m5 net5 a1 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m6 net5 a2 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m7 net5 a2 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m8 z net5 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m9 net57 a2 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m10 z net5 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m11 net44 a2 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m12 z net5 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m13 net5 a1 net44 vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m14 net5 a1 net57 vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m15 z net5 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+.ends AN2D4
+** End of subcircuit definition.
+
+** Library name: std_cells
+** Cell name: AO21D4
+** View name: schematic
+.subckt AO21D4 a1 a2 b z vdd vss
+m0 z net63 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m_u3 net13 a1 net63 vdd pch l=60e-9 w=1.04e-6 m=1 nf=1 sd=200e-9 ad=182e-15 as=182e-15 pd=2.43e-6 ps=2.43e-6 nrd=96.1538e-3 nrs=96.1538e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m1 z net63 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+mi11 net13 a2 net63 vdd pch l=60e-9 w=1.04e-6 m=1 nf=1 sd=200e-9 ad=182e-15 as=182e-15 pd=2.43e-6 ps=2.43e-6 nrd=96.1538e-3 nrs=96.1538e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+mi12 vdd b net13 vdd pch l=60e-9 w=1.04e-6 m=1 nf=1 sd=200e-9 ad=182e-15 as=182e-15 pd=2.43e-6 ps=2.43e-6 nrd=96.1538e-3 nrs=96.1538e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m2 z net63 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m3 z net63 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m4 z net63 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+mi7_1 net52 a2 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m5 z net63 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m_u7_1 net63 a1 net52 vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m6 z net63 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m7 z net63 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m_u7_0 net63 a1 net33 vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+mi7_0 net33 a2 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+mi6 net63 b vss vss nch l=60e-9 w=780e-9 m=1 nf=1 sd=200e-9 ad=136.5e-15 as=136.5e-15 pd=1.91e-6 ps=1.91e-6 nrd=128.205e-3 nrs=128.205e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+.ends AO21D4
+** End of subcircuit definition.
+
+** Library name: cad6_compact
+** Cell name: blackCell4x
+** View name: schematic
+.subckt blackCell4x gi gik gk pi pik pk
+xpand pk pi pik vdd! vss! AN2D4
+xaoi gk pi gi gik vdd! vss! AO21D4
+.ends blackCell4x
+** End of subcircuit definition.
+
+** Library name: cad6_compact
+** Cell name: buffer_4x
+** View name: schematic
+.subckt buffer_4x g g_out p p_out
+xi0 p p_out vdd! vss! BUFFD4
+xbuffer g g_out vdd! vss! BUFFD4
+.ends buffer_4x
+** End of subcircuit definition.
+
+** Library name: cad6_compact
+** Cell name: grayCell4x
+** View name: schematic
+.subckt grayCell4x gi gik gk pi
+xaoi gk pi gi gik vdd! vss! AO21D4
+.ends grayCell4x
+** End of subcircuit definition.
+
+** Library name: cad6_compact
+** Cell name: buffer_4x_single
+** View name: schematic
+.subckt buffer_4x_single g g_out
+xbuffer g g_out vdd! vss! BUFFD4
+.ends buffer_4x_single
+** End of subcircuit definition.
+
+** Library name: std_cells
+** Cell name: AN2D2
+** View name: schematic
+.subckt AN2D2 a1 a2 z vdd vss
+m0 z net9 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m1 net9 a2 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m2 z net9 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m3 net9 a1 vdd vdd pch l=60e-9 w=520e-9 m=1 nf=1 sd=200e-9 ad=91e-15 as=91e-15 pd=1.39e-6 ps=1.39e-6 nrd=192.308e-3 nrs=192.308e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m4 net29 a2 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m5 net9 a1 net29 vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m6 z net9 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+m7 z net9 vss vss nch l=60e-9 w=390e-9 m=1 nf=1 sd=200e-9 ad=68.25e-15 as=68.25e-15 pd=1.13e-6 ps=1.13e-6 nrd=256.41e-3 nrs=256.41e-3 sa=175e-9 sb=175e-9 sca=0 scb=0 scc=0
+.ends AN2D2
+** End of subcircuit definition.
+
+** Library name: cad6_compact
+** Cell name: blackCell2x
+** View name: schematic
+.subckt blackCell2x gi gik gk pi pik pk
+xaoi gk pi gi gik vdd! vss! AO21D1
+xpand pk pi pik vdd! vss! AN2D2
+.ends blackCell2x
+** End of subcircuit definition.
+
+** Library name: cad6_compact
+** Cell name: Brent_Kung_Tree
+** View name: schematic
+.subckt Brent_Kung_Tree a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 a14 a15 and0 and1 and2 and3 and4 and5 and6 and7 and8 and9 and10 and11 and12 and13 and14 and15 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 c0 c1 c2 c3 c4 c5 c6 c7 c8 c9 c10 c11 c12 c13 c14 c15 cin mvn0 mvn1 mvn2 mvn3 mvn4 mvn5 mvn6 mvn7 mvn8 mvn9 mvn10 mvn11 mvn12 mvn13 mvn14 mvn15 or0 or1 or2 or3 or4 or5 or6 or7 or8 or9 or10 or11 or12 or13 or14 or15 s
+xi114 net144 net154 net159 net156 buffer
+xi113 net179 net188 net190 net189 buffer
+xi109 net210 net219 net222 net221 buffer
+xi32 and12 net165 or12 net168 buffer
+xi33 and10 net181 or10 net184 buffer
+xi34 and8 net196 or8 net197 buffer
+xi35 and6 net212 or6 net215 buffer
+xi36 and4 net228 or4 net231 buffer
+xi37 and2 net243 or2 net254 buffer
+xi31 and14 net146 or14 net149 buffer
+xi157 and0 net0292 cin or0 grayCell2x
+xi108 net234 net216 net242 net236 grayCell2x
+xi39 net0295 net242 net0292 net0288 grayCell2x
+xi140 a0 mvn0 and0 or0 GP_blk
+xi54 a1 mvn1 and1 or1 GP_blk
+xi53 a2 mvn2 and2 or2 GP_blk
+xi52 a3 mvn3 and3 or3 GP_blk
+xi51 a4 mvn4 and4 or4 GP_blk
+xi50 a5 mvn5 and5 or5 GP_blk
+xi49 a6 mvn6 and6 or6 GP_blk
+xi48 a7 mvn7 and7 or7 GP_blk
+xi47 a8 mvn8 and8 or8 GP_blk
+xi46 a9 mvn9 and9 or9 GP_blk
+xi45 a10 mvn10 and10 or10 GP_blk
+xi44 a11 mvn11 and11 or11 GP_blk
+xi43 a12 mvn12 and12 or12 GP_blk
+xi42 a13 mvn13 and13 or13 GP_blk
+xi41 a14 mvn14 and14 or14 GP_blk
+xi40 a15 mvn15 and15 or15 GP_blk
+xi139 net0292 c0 buffer_single
+xi87 b0 net0303 vdd! vss! INVD0
+xi86 b1 net0294 vdd! vss! INVD0
+xi85 b2 net0293 vdd! vss! INVD0
+xi84 b3 net0305 vdd! vss! INVD0
+xi83 b4 net0291 vdd! vss! INVD0
+xi82 b5 net0290 vdd! vss! INVD0
+xi81 b6 net0289 vdd! vss! INVD0
+xi80 b7 net0304 vdd! vss! INVD0
+xi79 b8 net0287 vdd! vss! INVD0
+xi78 b9 net0286 vdd! vss! INVD0
+xi77 b10 net0285 vdd! vss! INVD0
+xi76 b11 net0284 vdd! vss! INVD0
+xi75 b12 net0283 vdd! vss! INVD0
+xi74 b13 net0282 vdd! vss! INVD0
+xi73 b14 net0281 vdd! vss! INVD0
+xi72 b15 net0280 vdd! vss! INVD0
+xi104 b0 net0303 s mvn0 vdd! vss! MUX2D1
+xi103 b1 net0294 s mvn1 vdd! vss! MUX2D1
+xi102 b2 net0293 s mvn2 vdd! vss! MUX2D1
+xi101 b3 net0305 s mvn3 vdd! vss! MUX2D1
+xi100 b4 net0291 s mvn4 vdd! vss! MUX2D1
+xi99 b5 net0290 s mvn5 vdd! vss! MUX2D1
+xi98 b6 net0289 s mvn6 vdd! vss! MUX2D1
+xi97 b7 net0304 s mvn7 vdd! vss! MUX2D1
+xi96 b8 net0287 s mvn8 vdd! vss! MUX2D1
+xi95 b9 net0286 s mvn9 vdd! vss! MUX2D1
+xi94 b10 net0285 s mvn10 vdd! vss! MUX2D1
+xi93 b11 net0284 s mvn11 vdd! vss! MUX2D1
+xi92 b12 net0283 s mvn12 vdd! vss! MUX2D1
+xi91 b13 net0282 s mvn13 vdd! vss! MUX2D1
+xi90 b14 net0281 s mvn14 vdd! vss! MUX2D1
+xi89 b15 net0280 s mvn15 vdd! vss! MUX2D1
+xi118 net257 net255 net151 net256 net140 net174 blackCell4x
+xi117 net151 net171 net174 net173 buffer_4x
+xi137 net243 c2 c1 net254 grayCell4x
+xi135 net228 c4 c3 net231 grayCell4x
+xi133 net212 c6 net282 net215 grayCell4x
+xi132 net196 c8 c7 net197 grayCell4x
+xi130 net181 c10 net185 net184 grayCell4x
+xi129 net165 c12 c11 net168 grayCell4x
+xi127 net146 c14 net150 net149 grayCell4x
+xi126 net219 net282 c3 net221 grayCell4x
+xi125 net188 net185 c7 net189 grayCell4x
+xi123 net154 net150 net160 net156 grayCell4x
+xi121 net171 net160 c7 net173 grayCell4x
+xi120 net255 net138 net164 net140 grayCell4x
+xi116 net202 net164 net216 net204 grayCell4x
+xi134 net282 c5 buffer_4x_single
+xi131 net185 c9 buffer_4x_single
+xi128 net150 c13 buffer_4x_single
+xi124 net160 c11 buffer_4x_single
+xi122 net138 c15 buffer_4x_single
+xi119 net164 c7 buffer_4x_single
+xi115 net216 c3 buffer_4x_single
+xi107 net242 c1 buffer_4x_single
+xi158 and1 net0295 and0 or1 net0288 or0 blackCell2x
+xi112 net134 net257 net144 net139 net256 net159 blackCell2x
+xi111 net261 net151 net179 net260 net174 net190 blackCell2x
+xi110 net259 net202 net210 net258 net204 net222 blackCell2x
+xi22 and3 net234 and2 or3 net236 or2 blackCell2x
+xi21 and5 net210 and4 or5 net222 or4 blackCell2x
+xi20 and7 net259 and6 or7 net258 or6 blackCell2x
+xi19 and9 net179 and8 or9 net190 or8 blackCell2x
+xi18 and11 net261 and10 or11 net260 or10 blackCell2x
+xi17 and13 net144 and12 or13 net159 or12 blackCell2x
+xi16 and15 net134 and14 or15 net139 or14 blackCell2x
+.ends Brent_Kung_Tree
+** End of subcircuit definition.
+
+** Library name: cad6_compact
+** Cell name: ALU
+** View name: schematic
+xi1 op1<0> op1<1> op1<10> op1<11> op1<12> op1<13> op1<14> op1<15> op1<2> op1<3> op1<4> op1<5> op1<6> op1<7> op1<8> op1<9> net84 net87 net114 net117 net120 net123 net126 net129 net90 net93 net96 net99 net102 net105 net108 net111 net82 net81 net70 net69 net68 net67 net66 net80 net79 net78 net77 net76 net75 net73 net71 ctrl<0> net163 net162 net153 net152 net151 net150 net149 net148 net161 net160 net159 net158 net157 net156 net155 net154 net147 net146 net137 net136 net135 net134 net133 net132 net145 net144 net143 net142 net141 net140 net139 net138 Adders
+xi18 net130 net132 net127 net129 net148 ctrl<0> ctrl<1> ctrl<2> alu_out<15> cad6_compact_5_1_mux_schematic
+xi17 net128 net133 net124 net126 net149 ctrl<0> ctrl<1> ctrl<2> alu_out<14> cad6_compact_5_1_mux_schematic
+xi16 net125 net134 net121 net123 net150 ctrl<0> ctrl<1> ctrl<2> alu_out<13> cad6_compact_5_1_mux_schematic
+xi15 net122 net135 net118 net120 net151 ctrl<0> ctrl<1> ctrl<2> alu_out<12> cad6_compact_5_1_mux_schematic
+xi14 net119 net136 net115 net117 net152 ctrl<0> ctrl<1> ctrl<2> alu_out<11> cad6_compact_5_1_mux_schematic
+xi13 net116 net137 net112 net114 net153 ctrl<0> ctrl<1> ctrl<2> alu_out<10> cad6_compact_5_1_mux_schematic
+xi12 net113 net138 net109 net111 net154 ctrl<0> ctrl<1> ctrl<2> alu_out<9> cad6_compact_5_1_mux_schematic
+xi11 net110 net139 net106 net108 net155 ctrl<0> ctrl<1> ctrl<2> alu_out<8> cad6_compact_5_1_mux_schematic
+xi10 net107 net140 net103 net105 net156 ctrl<0> ctrl<1> ctrl<2> alu_out<7> cad6_compact_5_1_mux_schematic
+xi9 net104 net141 net100 net102 net157 ctrl<0> ctrl<1> ctrl<2> alu_out<6> cad6_compact_5_1_mux_schematic
+xi8 net101 net142 net97 net99 net158 ctrl<0> ctrl<1> ctrl<2> alu_out<5> cad6_compact_5_1_mux_schematic
+xi7 net98 net143 net94 net96 net159 ctrl<0> ctrl<1> ctrl<2> alu_out<4> cad6_compact_5_1_mux_schematic
+xi6 net95 net144 net91 net93 net160 ctrl<0> ctrl<1> ctrl<2> alu_out<3> cad6_compact_5_1_mux_schematic
+xi5 net92 net145 net88 net90 net161 ctrl<0> ctrl<1> ctrl<2> alu_out<2> cad6_compact_5_1_mux_schematic
+xi4 net89 net146 net85 net87 net162 ctrl<0> ctrl<1> ctrl<2> alu_out<1> cad6_compact_5_1_mux_schematic
+xi3 net86 net147 net83 net84 net163 ctrl<0> ctrl<1> ctrl<2> alu_out<0> cad6_compact_5_1_mux_schematic
+xi2 ctrl<0> net054 net198 vdd! vss! AN2D1
+xi19 alu_out<15> n_flag vdd! vss! BUFFD4
+xi20 net66 c_flag v_flag vdd! vss! XOR2D4
+xi23 ctrl<2> ctrl<1> net054 vdd! vss! XOR2D0
+xi0 op1<0> op1<1> op1<2> op1<3> op1<4> op1<5> op1<6> op1<7> op1<8> op1<9> op1<10> op1<11> op1<12> op1<13> op1<14> op1<15> net86 net89 net92 net95 net98 net101 net104 net107 net110 net113 net116 net119 net122 net125 net128 net130 op0<0> op0<1> op0<2> op0<3> op0<4> op0<5> op0<6> op0<7> op0<8> op0<9> op0<10> op0<11> op0<12> op0<13> op0<14> op0<15> net82 net81 net80 net79 net78 net77 net76 net75 net73 net71 net70 net69 net68 net67 net66 c_flag ctrl<0> net84 net87 net90 net93 net96 net99 net102 net105 net108 net111 net114 net117 net120 net123 net126 net129 net83 net85 net88 net91 net94 net97 net100 net103 net106 net109 net112 net115 net118 net121 net124 net127 net198 Brent_Kung_Tree
+.END

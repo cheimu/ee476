@@ -1,0 +1,23 @@
+* File: INVD1.pex.netlist
+* Created: Fri Oct 13 01:42:56 2017
+* Program "Calibre xRC"
+* Version "v2010.4_26.16"
+* 
+.subckt INVD1  VI VO
+* 
+MM1 VO VI VSS! VSS! nch L=6e-08 W=3e-07 AD=5.25e-14 AS=5.25e-14 PD=9.5e-07
++ PS=9.5e-07 NRD=0.583333 NRS=0.583333 SA=1.75e-07 SB=1.75e-07 SCA=10.7782
++ SCB=0.00668055 SCC=6.61396e-05
+MM0 VO VI VDD! VDD! pch L=6e-08 W=4e-07 AD=7e-14 AS=7.2e-14 PD=1.15e-06
++ PS=1.16e-06 NRD=0.4375 NRS=0.45 SA=1.8e-07 SB=1.75e-07 SCA=9.26496
++ SCB=0.00553689 SCC=9.99545e-05
+c_4 VSS! 0 0.082829f
+c_8 VDD! 0 0.0908861f
+c_12 VO 0 0.030455f
+c_16 VI 0 0.0747705f
+*
+.include "INVD1.pex.netlist.INVD1.pxi"
+*
+.ends
+*
+*

@@ -1,0 +1,80 @@
+
+{
+  "parts": {
+
+    // ALU Schematic
+    "1": {
+      "files": {
+        "cad6_turnin/part1/ALU.ckt": {
+          "circuit": {
+            "name": "ALU",
+            "pins": [
+               "alu_out<0>", "alu_out<1>", "alu_out<2>", "alu_out<3>",
+               "alu_out<4>", "alu_out<5>", "alu_out<6>", "alu_out<7>",
+               "alu_out<8>", "alu_out<9>", "alu_out<10>", "alu_out<11>",
+               "alu_out<12>", "alu_out<13>", "alu_out<14>", "alu_out<15>",
+               "op0<0>", "op0<1>", "op0<2>", "op0<3>",
+               "op0<4>", "op0<5>", "op0<6>", "op0<7>",
+               "op0<8>", "op0<9>", "op0<10>", "op0<11>",
+               "op0<12>", "op0<13>", "op0<14>", "op0<15>",
+               "op1<0>", "op1<1>", "op1<2>", "op1<3>",
+               "op1<4>", "op1<5>", "op1<6>", "op1<7>",
+               "op1<8>", "op1<9>", "op1<10>", "op1<11>",
+               "op1<12>", "op1<13>", "op1<14>", "op1<15>",
+               "c_flag", "n_flag", "v_flag",
+               "ctrl<0>", "ctrl<1>", "ctrl<2>"
+            ]
+          }
+        }
+      },
+      "measurements": {
+        "en_deliv_add": "2.250e-12",
+        "en_deliv_sub": "1.277e-12"
+      }
+    },
+
+    // ALU Layout
+    "2": {
+      "files": {
+        "cad6_turnin/part2/ALU.ckt": {
+          "circuit": {
+            "name": "ALU",
+            "pins": [
+               "alu_out<0>", "alu_out<1>", "alu_out<2>", "alu_out<3>",
+               "alu_out<4>", "alu_out<5>", "alu_out<6>", "alu_out<7>",
+               "alu_out<8>", "alu_out<9>", "alu_out<10>", "alu_out<11>",
+               "alu_out<12>", "alu_out<13>", "alu_out<14>", "alu_out<15>",
+               "op0<0>", "op0<1>", "op0<2>", "op0<3>",
+               "op0<4>", "op0<5>", "op0<6>", "op0<7>",
+               "op0<8>", "op0<9>", "op0<10>", "op0<11>",
+               "op0<12>", "op0<13>", "op0<14>", "op0<15>",
+               "op1<0>", "op1<1>", "op1<2>", "op1<3>",
+               "op1<4>", "op1<5>", "op1<6>", "op1<7>",
+               "op1<8>", "op1<9>", "op1<10>", "op1<11>",
+               "op1<12>", "op1<13>", "op1<14>", "op1<15>",
+               "c_flag", "n_flag", "v_flag",
+               "ctrl<0>", "ctrl<1>", "ctrl<2>"
+            ]
+          }
+        },
+        "cad6_turnin/part2/ALU.lvs.report" : "none",
+        "cad6_turnin/part2/ALU.drc.summary" : "none",
+        "cad6_turnin/part2/ALU.pex.netlist" : "none",
+        "cad6_turnin/part2/ALU.pex.netlist.ALU.pxi" : "none"
+      },
+      "measurements": {
+        "en_deliv_add": "2.897e-12",
+        "en_deliv_sub": "1.551e-12"
+      }
+    },
+
+    // Additional questions
+    "3": {
+      "files": {"none": "none"},
+      "measurements": {"none": "none"}
+    }
+  },
+
+  // CAD 6 report
+  "report": "cad6_turnin/cad6_report.pdf"
+}
